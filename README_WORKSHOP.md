@@ -145,13 +145,6 @@ And if you visit the browser now, you should be able to see our beautiful pups :
 
   When you load up the website you should be able to see your new puppies instead of the defaults.
 
-<details style="padding-left: 2em">
-    <summary> STOP! and find another pair</summary>
-
-    - After attempting this stage, stop and find another pair who has reached the same stage.
-      Share your solutions and discuss any challenges faced.
-
-</details>
 
 ---
 
@@ -217,13 +210,6 @@ Visit the page at `http://localhost:5173/1` to confirm that the individual puppy
 
   </details>
 
-<details style="padding-left: 2em">
-    <summary> STOP! and find another pair</summary>
-
-    - After attempting this stage, stop and find another pair who has reached the same stage.
-      Share your solutions and discuss any challenges faced.
-
-</details>
 
 ---
 
@@ -282,13 +268,6 @@ Commit, push and you could now submit your branch for the CP07 Trello ticket :)
 
   </details>
 
-<details style="padding-left: 2em">
-    <summary> STOP! and find another pair</summary>
-
-    - After attempting this stage, stop and find another pair who has reached the same stage.
-      Share your solutions and discuss any challenges faced.
-
-</details>
 
 ---
 
@@ -298,13 +277,6 @@ Commit, push and you could now submit your branch for the CP07 Trello ticket :)
 
 For this step you will add a new react component and client-side route that shows a form which lets the user add a new puppy.
 
-<details style="padding-left: 2em">
-    <summary> STOP! and find another pair</summary>
-
-    - After attempting this stage, stop and find another pair who has reached the same stage.
-      Share your solutions and discuss any challenges faced.
-
-</details>
 
 ---
 
@@ -314,13 +286,7 @@ For this step you will add a new react component and client-side route that show
 
 For this step, challenge yourself to add a new animal. Maybe you want to display cats? Or iguanas? Or maybe a collection of stick insects? Think about how the user experience and how you can update the app to accommodate different animals.
 
-<details style="padding-left: 2em">
-    <summary> STOP! and find another pair</summary>
-
-    - After attempting this stage, stop and find another pair who has reached the same stage.
-      Share your solutions and discuss any challenges faced.
-
-</details>
+---
 
 ## E2E tests and submitting this challenge for marking
 
