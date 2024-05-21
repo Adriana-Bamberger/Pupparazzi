@@ -191,7 +191,7 @@ You can either loop through the puppies or use [`array.find`](https://developer.
 Next, add a new route handler in [`puppies.ts`](./server/routes/puppies.ts) which uses a route param:
 
 ```js
-router.get('/:id', async (res, req) => {
+router.get('/:id', async (req, res) => {
   const id = Number(req.params.id)
   console.log(id)
 })
