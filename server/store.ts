@@ -18,3 +18,8 @@ export async function getPuppies(): Promise<Data> {
     throw error
   }
 }
+
+export async function getPuppyById(id: number): Promise<Puppy | undefined> {
+  const data = await getPuppies()
+  return data.puppies.find((puppy: Puppy) => puppy.id === id)
+}
