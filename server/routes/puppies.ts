@@ -1,7 +1,5 @@
 import express from 'express'
 import * as store from '../store.ts'
-import { Puppy } from '../models/Puppy.ts'
-import puppies from './initial-data.ts'
 
 const router = express.Router()
 export default router
@@ -17,5 +15,16 @@ router.get('/:id', async (req, res) => {
   res.json(Puppy)
   if (Puppy === undefined) {
     res.sendStatus(404)
+  }
+})
+
+router.patch('/:id', async (req, res) => {
+  try {
+    const id = Number(req.params.id)
+    await store.updatePuppy(id, req.body)
+    res.sendStatus(204)
+  } catch (error) {
+    console.error(error)
+    res.sendStatus(500)
   }
 })
