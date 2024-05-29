@@ -28,3 +28,16 @@ router.patch('/:id', async (req, res) => {
     res.sendStatus(500)
   }
 })
+
+// Streach, adding .post
+
+router.post('/new', async (req, res) => {
+  try {
+    const data = await store
+    .makePuppy(req.body)
+    res.json(data)
+  } catch (error) {
+    console.error(error)
+    res.sendStatus(500)
+  }
+})
