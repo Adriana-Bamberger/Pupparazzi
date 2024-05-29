@@ -50,3 +50,13 @@ export async function updatePuppy(
 }
 
 //  Small change
+
+export async function makePuppy(newPuppy: PuppyData): Promise<void> {
+  const data = await getPuppies() //use the getPuppies function
+  const curId = data.puppies.length // find the lenght
+  const id = curId + 1 // and add one to stop the error.
+  data.puppies.push({ id: id, ...newPuppy }) // cross my fingers the .push methode works and copy it across
+  const string = JSON.stringify(data) // pretty much the same as above
+  // Write Data to that puppies
+  await fs.writeFile('.data.json', string, 'utf-8')
+}
