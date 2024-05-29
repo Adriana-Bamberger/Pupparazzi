@@ -31,10 +31,9 @@ router.patch('/:id', async (req, res) => {
 
 // Streach, adding .post
 
-router.post('/new', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
-    const data = await store
-    .makePuppy(req.body)
+    const data = await store.makePuppy(req.body)
     res.json(data)
   } catch (error) {
     console.error(error)
